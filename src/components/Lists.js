@@ -65,7 +65,8 @@ class Lists extends React.Component {
     
             this.setState({
                 onOpenFrom: false,
-                lists: newLists
+                lists: newLists,
+                editTestData: {}
             })
         } else {
             let newId = lists[lists.length-1].id + 1
@@ -77,7 +78,8 @@ class Lists extends React.Component {
                         id: newId
                     }
                 ],
-                onOpenFrom: false
+                onOpenFrom: false,
+                editTestData: {}
             })
         }
     }
@@ -90,7 +92,8 @@ class Lists extends React.Component {
 
     closeForm = () => {
         this.setState({
-            onOpenFrom: false
+            onOpenFrom: false,
+            editTestData: {}
         })
     }
 
