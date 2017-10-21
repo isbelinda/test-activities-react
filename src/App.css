@@ -63,6 +63,7 @@ table thead td {
 table tbody td {
   padding: 8px 16px;
   border-top: 1px solid #c6c8cc;
+  cursor: pointer;
 }
 
 table tbody tr:hover {
